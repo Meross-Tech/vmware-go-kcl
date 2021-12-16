@@ -1,7 +1,7 @@
 package zerolog
 
 import (
-	"github.com/vmware/vmware-go-kcl/logger"
+	"github.com/Meross-Tech/vmware-go-kcl/logger"
 	"testing"
 )
 

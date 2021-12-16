@@ -28,8 +28,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.uber.org/zap"
 
-	"github.com/vmware/vmware-go-kcl/logger"
-	zaplogger "github.com/vmware/vmware-go-kcl/logger/zap"
+	"github.com/Meross-Tech/vmware-go-kcl/logger"
+	zaplogger "github.com/Meross-Tech/vmware-go-kcl/logger/zap"
 )
 
 func TestZapLoggerWithConfig(t *testing.T) {

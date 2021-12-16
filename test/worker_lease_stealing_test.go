@@ -3,10 +3,10 @@ package test
 import (
 	"testing"
 
-	chk "github.com/vmware/vmware-go-kcl/clientlibrary/checkpoint"
-	cfg "github.com/vmware/vmware-go-kcl/clientlibrary/config"
-	wk "github.com/vmware/vmware-go-kcl/clientlibrary/worker"
-	"github.com/vmware/vmware-go-kcl/logger"
+	chk "github.com/Meross-Tech/vmware-go-kcl/clientlibrary/checkpoint"
+	cfg "github.com/Meross-Tech/vmware-go-kcl/clientlibrary/config"
+	wk "github.com/Meross-Tech/vmware-go-kcl/clientlibrary/worker"
+	"github.com/Meross-Tech/vmware-go-kcl/logger"
 )
 
 func TestLeaseStealing(t *testing.T) {
