@@ -227,6 +227,7 @@ func (checkpointer *DynamoCheckpoint) GetLease(shard *par.ShardStatus, newAssign
 	shard.Mux.Lock()
 	shard.AssignedTo = newAssignTo
 	shard.LeaseTimeout = newLeaseTimeout
+	shard.ClaimRequest = "" // Clear ClaimRequest, Compatible lease stealing
 	shard.Mux.Unlock()
 
 	return nil

@@ -382,10 +382,10 @@ func (w *Worker) rebalance() error {
 				log.Debugf("Steal in progress. workerID: %s", w.workerID)
 				return nil
 			}
-			// Our shard steal was stomped on by a Checkpoint.
-			// We could deal with that, but instead just try again
-			w.shardStealInProgress = false
 		}
+		// Our shard steal was stomped on by a Checkpoint.
+		// We could deal with that, but instead just try again
+		w.shardStealInProgress = false
 	}
 
 	var numShards int
@@ -443,6 +443,8 @@ func (w *Worker) rebalance() error {
 		w.shardStealInProgress = false
 		return err
 	}
+	// Set lease stealing
+	w.shardStatus[shardToSteal.ID].SetClaimRequest(w.workerID)
 	return nil
 }
 
