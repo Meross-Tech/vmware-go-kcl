@@ -1,4 +1,4 @@
-module github.com/vmware/vmware-go-kcl
+module github.com/Meross-Tech/vmware-go-kcl
 
 go 1.17
 
